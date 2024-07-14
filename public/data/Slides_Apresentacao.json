@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 1,
+    "Imagem": "./img/Banners/Banner_Nidus_One.png",
+    "Extras": true,
+    "Titulo_Centralizado": "Nidus One",
+    "Sub_Titulo_Centralizado": "One dream on a t-shirt",
+    "Banco_De_Banners": "Nidus"
+  },
+  {
+    "Id": 2,
+    "Imagem": "./img/Banners/Banner_Nidus_Prime.png",
+    "Extras": true,
+    "Titulo_Centralizado": "Nidus Prime",
+    "Sub_Titulo_Centralizado": "Selection made for you",
+    "Banco_De_Banners": "Nidus"
+  },
+  {
+    "Id": 3,
+    "Imagem": "./img/Banners/Banner_Nidus_T-Shirt.png",
+    "Extras": true,
+    "Titulo_Centralizado": "Nidus T-Shirt",
+    "Sub_Titulo_Centralizado": "Simple and fascinating",
+    "Banco_De_Banners": "Nidus"
+  },
+  {
+    "Id": 4,
+    "Imagem": "./img/Banners/Banner_Nidus_Prime.png",
+    "Extras": true,
+    "Titulo_Centralizado": "Nidus Prime",
+    "Sub_Titulo_Centralizado": "Selection made for you",
+    "Banco_De_Banners": "Nidus"
+  }
+]

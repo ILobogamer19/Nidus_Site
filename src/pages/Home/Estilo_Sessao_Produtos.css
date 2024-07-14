@@ -1,0 +1,98 @@
+.Sessao_Produtos_Conjunto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 15vw;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.Filtros_De_Produtos_Conjunto {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  min-width: 140px;
+}
+
+.Produtos_Principais_Conjunto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.Filtro_Individual {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.1s ease;
+}
+
+.Filtro_Individual_Ativo {
+  transition: color 0.5s ease;
+  color: red !important;
+}
+
+.Filtro_Individual:hover {
+  color: rgba(255, 255, 255, 0.378);
+  color: rgba(255, 0, 0, 0.378);
+}
+
+.Produto_Individual_Card_Padronizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.5s ease;
+  max-width: 200px;
+  background-color: rgb(5, 5, 5);
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.Produto_Individual_Card_Padronizado p {
+  position: relative;
+  z-index: 2;
+}
+
+.Produto_Individual_Card_Padronizado:hover {
+  background-color: rgb(10, 10, 10);
+  transform: translateY(-15px);
+  border-radius: 15px;
+}
+.Imagem_Do_Produto_Padronizado {
+  transition: opacity 1s ease;
+  width: 100%;
+  min-width: 220px;
+}
+
+.Produto_Individual_Card_Padronizado:hover .Segunda_Parte {
+  zoom: 1.2;
+  top: -20px;
+  left: -20px;
+}
+
+.Segunda_Parte {
+  transition: transform 0.5s ease, opacity 1s ease, zoom 1s ease;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.Nome_Do_Produto_Padronizado {
+  font-size: 2rem;
+}
+.Colecao_Do_Produto_Padronizado {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .Sessao_Produtos_Conjunto {
+    padding: 2rem 7vw;
+  }
+}

@@ -1,0 +1,28 @@
+/* Pagina Home */
+:root {
+  /* Estilo_Chat_Suporte_Cliente.css */
+  --Fundo_Do_Chat: #2a2a2a; /* Cor mais escura para o fundo */
+  --Borda_Do_Chat: hsl(0, 0%, 40%); /* Cor da borda escurecida */
+  --Fundo_Da_Barra_De_Rolagem_Chat: #b33030; /* Tom mais escuro de vermelho */
+  --Fundo_Chat_Suporte_Maximizado: #1e1e1e; /* Fundo bem escuro */
+  --Fundo_Parte_Superior_Do_Chat_Maximizado: #3e3e3e; /* Fundo escuro, mas com contraste */
+  --Borda_Inferior_Parte_Superior_Do_Chat_Maximizado: #4a4a4a; /* Borda escura */
+  --Fonte_De_Mensagens_Do_Chat: #ffffff; /* Mantendo o branco para legibilidade */
+  --Fundo_Mensagens_Recebidas_Do_Suporte: #b33030; /* Tom mais escuro de vermelho */
+  --Fundo_Mensagens_Enviadas: #4a4a4a; /* Fundo escuro */
+  --Fundo_Div_De_Envio_De_Mensagem: #1e1e1e; /* Fundo bem escuro */
+  --Contorno_Da_Div_De_Envio_De_Mensagem_Quando_Focada: red; /* Tom mais escuro de vermelho */
+}
+
+/* Pagina Atendimento */
+:root {
+  /* Estilo_Chats_Ativos.css */
+  --Fundo_Chats_Ativos: #2a2a2a; /* Fundo escuro */
+  --Borda_Chats_Ativos: hsl(0, 0%, 40%); /* Cor da borda escurecida */
+  --Fundo_Topo_Chats_Ativos: #3e3e3e; /* Fundo escuro, mas com contraste */
+  --Borda_Topo_Chats_Ativos: hsl(0, 0%, 40%); /* Cor da borda escurecida */
+  --Fundo_Chat_Focado: #4a4a4a; /* Fundo escuro com contraste */
+
+  /* Style in element */
+  --Fundo_Chat_Ativo: #4a4a4a; /* Fundo escuro com contraste */
+}

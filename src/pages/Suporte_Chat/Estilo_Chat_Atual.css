@@ -1,0 +1,7 @@
+.Chat_Atual_Selecionado {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Fundo_Chat_Suporte_Maximizado);
+}

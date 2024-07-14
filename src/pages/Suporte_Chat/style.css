@@ -1,0 +1,6 @@
+.Interface_De_Atendimento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100dvh;
+}

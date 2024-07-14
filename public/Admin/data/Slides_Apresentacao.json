@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "Imagem": "img/banner-1.jpg",
+    "Banco_De_Banners": "Bianka_Modas"
+  },
+  {
+    "Id": 2,
+    "Imagem": "img/banner-2.jpg",
+    "Banco_De_Banners": "Bianka_Modas"
+  },
+  {
+    "Id": 3,
+    "Imagem": "img/banner-3.jpg",
+    "Banco_De_Banners": "Bianka_Modas"
+  }
+]

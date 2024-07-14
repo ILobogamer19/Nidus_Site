@@ -1,0 +1,45 @@
+.Chats_Ativos {
+  height: 100%;
+  background-color: var(--Fundo_Chats_Ativos);
+  border-right: 3px solid var(--Borda_Chats_Ativos);
+}
+.Topo_Dos_Chats {
+  padding: 20px;
+  background-color: var(--Fundo_Topo_Chats_Ativos);
+  border-bottom: 2px solid var(--Borda_Topo_Chats_Ativos);
+}
+.Chat_Ativo_Individual {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Chat_Ativo_Individual:hover {
+  background-color: var(--Fundo_Chat_Focado);
+}
+.Cabeca_Do_Chat_Individual {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.Chat_Individual_Id {
+  margin-right: 20px;
+}
+.Chat_Individual_Horario {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.Corpo_Do_Chat_Individual {
+  display: flex;
+  overflow: hidden;
+}
+
+.Chat_Individual_Mensagem_Previa {
+  margin-left: 20px;
+  font-size: 15px;
+  max-width: 400px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,0 +1,100 @@
+/* Seção de Estilização do Banner de Apresentações */
+.Imagens_De_Apresentacoes {
+  width: 100%;
+  overflow: hidden;
+  /* overflow: scroll; */
+  position: absolute;
+}
+.Corretor_De_Slides {
+  height: calc(35.24vw + 99px + 30px);
+}
+
+.Slide img {
+  width: 100%;
+}
+.Conjunto_Slide_Itens_Div {
+  background-color: #0e0c0d;
+}
+
+.Input_Tipo_Radio_Alteracao_Slide {
+  display: none;
+}
+.Navegacao_Entre_Slides {
+  display: none;
+}
+.Barra_De_Navegacao_De_Imagem {
+  width: 0.5vw;
+  height: 0.5vh;
+  border: 0.2vw solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+.Conteudo_Do_Slide_Clicavel {
+  position: relative;
+}
+.Conteudo_Do_Slide_Clicavel > * {
+  position: absolute;
+}
+.Informacoes_Extras_No_Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Informacoes_Extras_No_Banner:hover {
+  color: white;
+  background: linear-gradient(to right, white 50%, red 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background 0.7s ease;
+  background-size: 200% 100%;
+  background-position: -100% 0%;
+}
+
+.Extra_Sub_Titulo_Centralizado {
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.5s ease;
+}
+
+.Informacoes_Extras_No_Banner:hover .Extra_Sub_Titulo_Centralizado {
+  transition: opacity 2s ease;
+
+  opacity: 1;
+}
+
+.Conteudo_Do_Slide_Clicavel {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Extra_Titulo_Centralizado {
+  font-size: 5vw;
+}
+.Extra_Sub_Titulo_Centralizado {
+  font-size: 1vw;
+}
+
+.Conteudo_Do_Slide_Clicavel {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Extra_Titulo_Centralizado {
+  font-size: 5vw;
+}
+.Extra_Sub_Titulo_Centralizado {
+  font-size: 1vw;
+}

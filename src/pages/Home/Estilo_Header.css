@@ -1,0 +1,91 @@
+.Header_Geral_De_Cima {
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px;
+}
+.Linha_De_Inicio {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  justify-content: center;
+  text-align: center;
+}
+.Conjunto_Segunda_Linha {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Conjunto_De_Ferramentas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Conjunto_De_Ferramentas i {
+  cursor: pointer;
+}
+.Logo_Nidus_Header {
+  width: 170px;
+  zoom: 1.5;
+  cursor: pointer;
+}
+.Separador_De_Ferramentas {
+  margin: 0 0 0 10px;
+  height: 25px;
+  border-right: 1px solid white;
+}
+.Separador_De_Ferramentas_Right {
+  margin: 0 10px 0 0;
+  height: 25px;
+  border-left: 1px solid white;
+}
+.Separador_De_Ferramentas > span {
+  opacity: 0;
+}
+.Separador_De_Ferramentas_Right > span {
+  opacity: 0;
+}
+.Quantia_De_Itens_No_Carrinho {
+  opacity: 0;
+  margin: 0 0 0 5px;
+}
+.Conjunto_Carrinho_E_Numeracao {
+  display: flex;
+}
+.Banners_Corridos_Conjunto_Img {
+  width: 100%;
+}
+.Banners_Corridos_Conjunto_Img img {
+  width: 100%;
+}
+.Barra_De_Navegacao_De_Encolhida {
+  position: absolute;
+  right: 10px;
+}
+.Menu_De_Opcoes_Tela_Pequena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgb(19, 19, 19);
+  z-index: 99999;
+  right: 0;
+  top: 56px;
+  font-size: 30px;
+}
+
+/*Animacoes*/
+.Logo_Branca {
+  z-index: 2;
+}
+.Logo_Vermelha {
+  z-index: 0;
+}
+.Conjunto_De_Ferramentas *:hover {
+  color: red;
+}
+.Conjunto_Carrinho_E_Numeracao:hover {
+  color: red !important;
+}

@@ -1,0 +1,161 @@
+/* Padrão */
+.Chat_De_Suporte_Maximizado,
+.Chat_De_Suporte_Minimizada {
+  background-color: var(--Fundo_Do_Chat);
+  border: 1px solid var(--Borda_Do_Chat);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 25px;
+  width: 338px;
+  border-radius: 10px 10px 0 0;
+  z-index: 999999999;
+  display: flex;
+}
+
+/* CHAT MAXIMIZADO */
+.Mensagens_Do_Chat::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+.Mensagens_Do_Chat::-webkit-scrollbar-thumb {
+  background-color: var(--Fundo_Da_Barra_De_Rolagem_Chat);
+  padding: 0;
+}
+
+.Mensagens_Do_Chat::-webkit-scrollbar-track {
+  padding: 0;
+}
+.Chat_De_Suporte_Maximizado {
+  height: 445px;
+  border: 0px;
+  flex-direction: column;
+  background-color: var(--Fundo_Chat_Suporte_Maximizado);
+}
+.Parte_Superior_Chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Fundo_Parte_Superior_Do_Chat_Maximizado);
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid
+    var(--Borda_Inferior_Parte_Superior_Do_Chat_Maximizado);
+}
+
+.Parte_Superior_Chat_Esquerda {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Parte_Superior_Chat_Esquerda > img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.message-author {
+  font-weight: 700;
+}
+
+.Mensagens_Do_Chat {
+  flex-grow: 1;
+  padding: 0 10px;
+  height: 550px;
+  overflow-y: auto;
+  color: var(--Fonte_De_Mensagens_Do_Chat);
+  display: flex;
+  flex-direction: column;
+}
+
+.Mensagens_Do_Chat:nth-last-child(2) {
+  margin-bottom: 10px;
+}
+
+.Mensagens_Recebidas {
+  max-width: 80%;
+  width: fit-content;
+  background-color: var(--Fundo_Mensagens_Recebidas_Do_Suporte);
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 0 7px 7px 7px;
+  align-self: start;
+}
+.Minha_Mensagem {
+  border-radius: 7px 0 7px 7px;
+  align-self: end;
+
+  background-color: var(--Fundo_Mensagens_Enviadas);
+}
+.Aumentar_Balao_Do_Suporte {
+  display: flex;
+  word-break: break-all;
+}
+.Aumentar_Balao_Do_Suporte::before {
+  content: "";
+  position: relative;
+  left: -20px;
+  /* top: 10px;  */
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--Fundo_Mensagens_Recebidas_Do_Suporte);
+  margin-top: -27px;
+}
+.Aumentar_Balao_Do_Usuario {
+  display: flex;
+  word-break: break-all;
+}
+.Aumentar_Balao_Do_Usuario::after {
+  content: "";
+  position: relative;
+  right: -20px;
+  /* top: 10px;  */
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--Fundo_Mensagens_Enviadas);
+  margin-top: -27px;
+}
+
+.Envio_De_Mensagem {
+  display: flex;
+  background-color: var(--Fundo_Div_De_Envio_De_Mensagem);
+  align-items: center;
+  flex-direction: row;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+
+.Envio_De_Mensagem > span {
+  cursor: pointer;
+}
+.Input_De_Envio_De_Mensagens {
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  flex-grow: 1;
+  color: white;
+  background-color: var(--Fundo_Div_De_Envio_De_Mensagem);
+}
+.Envio_De_Mensagem:focus-within,
+.Envio_De_Mensagem:hover {
+  outline: 2px solid var(--Contorno_Da_Div_De_Envio_De_Mensagem_Quando_Focada);
+}
+
+/* CHAT MINIMIZADO */
+.Chat_De_Suporte_Minimizada {
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.Chat_De_Suporte_Minimizada > p {
+  margin: auto;
+}
+.Chat_De_Suporte_Minimizada > span {
+  margin-right: 5px;
+}

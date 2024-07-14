@@ -1,0 +1,58 @@
+{
+  "Opcoes_Do_Menu": [
+    {
+      "Icon_Name": "fa-solid fa-user",
+      "Link": ""
+    },
+    {
+      "Icon_Name": "fa-solid fa-magnifying-glass",
+      "Link": ""
+    },
+    {
+      "Icon_Name": "fa-brands fa-instagram",
+      "Link": "https://www.instagram.com/_lucazpadilha/"
+    },
+    {
+      "Icon_Name": "fa-brands fa-whatsapp",
+      "Link": "https://wa.me/5515981401152"
+    },
+    {
+      "Type": "Cart",
+      "Icon_Name": "fa-solid fa-cart-shopping",
+      "Class": "Quantia_De_Itens_No_Carrinho",
+      "Link": ""
+    }
+  ],
+  "Navbar": [
+    {
+      "Nome_Loja": "Nidus",
+      "Logo_Img": "./img/Logo_Nidus_Branca.png"
+    }
+  ],
+  "Produtos": [
+    {
+      "Id": 1,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus One",
+      "Preco": 90.0,
+      "Colecao": "Nidus Originals",
+      "Filtros": ["Nidus Originals", "Basic"]
+    },
+    {
+      "Id": 2,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Prime",
+      "Preco": 90.0,
+      "Colecao": "Nidus Originals",
+      "Filtros": ["Nidus Originals", "Basic"]
+    },
+    {
+      "Id": 3,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus T-Shirt",
+      "Preco": 90.0,
+      "Colecao": "Nidus Originals",
+      "Filtros": ["Nidus Originals", "Simple"]
+    }
+  ]
+}
