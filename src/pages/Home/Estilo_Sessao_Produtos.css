@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 15vw;
+  padding: 2rem 14vw;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -10,8 +10,11 @@
 .Filtros_De_Produtos_Conjunto {
   display: flex;
   flex-direction: column;
-  padding-right: 20px;
-  min-width: 140px;
+  padding: 20px;
+  min-width: 200px;
+  background-color: rgb(43 42 42 / 22%);
+  border: 1px solid black;
+  border-radius: 30px;
 }
 
 .Produtos_Principais_Conjunto {
@@ -24,18 +27,22 @@
 }
 
 .Filtro_Individual {
+  position: relative;
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.1s ease;
+  transition: color 0.1s ease, padding 0.5s ease;
+  padding-left: 5px;
+  border-left: 1px solid white;
 }
 
 .Filtro_Individual_Ativo {
-  transition: color 0.5s ease;
+  transition: color 0.5s ease, padding 0.5s ease;
+  padding-left: 38px;
   color: red !important;
 }
 
 .Filtro_Individual:hover {
-  color: rgba(255, 255, 255, 0.378);
+  /* color: rgba(255, 255, 255, 0.378); */
   color: rgba(255, 0, 0, 0.378);
 }
 
@@ -47,7 +54,7 @@
   position: relative;
   transition: transform 0.5s ease;
   max-width: 200px;
-  background-color: rgb(5, 5, 5);
+  background-color: #111111;
   margin: 5px;
   padding: 10px;
   border: 1px solid black;
@@ -60,7 +67,7 @@
 }
 
 .Produto_Individual_Card_Padronizado:hover {
-  background-color: rgb(10, 10, 10);
+  background-color: #222222;
   transform: translateY(-15px);
   border-radius: 15px;
 }

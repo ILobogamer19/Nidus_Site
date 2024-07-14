@@ -41,32 +41,43 @@ export default function Filtros_De_Produtos({
       <p
         className={
           Filtro_Ativo == ""
-            ? "Filtro_Individual Filtro_Individual_Ativo"
+            ? "Filtro_Individual Filtro_Individual_Ativo "
             : "Filtro_Individual"
         }
         onClick={() => {
           Definir_Valor_Do_filtro("");
         }}
+        style={{
+          paddingLeft: 0,
+        }}
       >
         Limpar Filtro
       </p>
-      {Filtros.map((item) => {
-        return (
-          <p
-            key={"Filtro_Individual" + item}
-            className={
-              Filtro_Ativo == item
-                ? "Filtro_Individual Filtro_Individual_Ativo"
-                : "Filtro_Individual"
-            }
-            onClick={() => {
-              Definir_Valor_Do_filtro(item);
-            }}
-          >
-            {item}
-          </p>
-        );
-      })}
+      <div
+        className="Filtros_Utilizaveis"
+        style={{
+          marginLeft: "33px",
+          marginTop: "10px",
+        }}
+      >
+        {Filtros.map((item) => {
+          return (
+            <p
+              key={"Filtro_Individual" + item}
+              className={
+                Filtro_Ativo == item
+                  ? "Filtro_Individual Filtro_Individual_Ativo"
+                  : "Filtro_Individual"
+              }
+              onClick={() => {
+                Definir_Valor_Do_filtro(item);
+              }}
+            >
+              {item}
+            </p>
+          );
+        })}
+      </div>
     </div>
   );
 }
