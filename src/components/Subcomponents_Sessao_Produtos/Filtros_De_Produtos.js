@@ -48,7 +48,7 @@ export default function Filtros_De_Produtos({
           Definir_Valor_Do_filtro("");
         }}
         style={{
-          paddingLeft: 0,
+          paddingLeft: "5px",
         }}
       >
         Limpar Filtro
