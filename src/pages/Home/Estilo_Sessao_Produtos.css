@@ -40,7 +40,7 @@
 
 .Filtro_Individual_Ativo {
   transition: color 0.5s ease, padding 0.5s ease;
-  padding-left: 38px;
+  padding-left: 2rem;
   color: red !important;
 }
 
@@ -50,6 +50,7 @@
 }
 
 .Produto_Individual_Card_Padronizado {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,8 +59,8 @@
   transition: transform 0.5s ease;
   max-width: 200px;
   background-color: #111111;
-  margin: 5px;
-  padding: 10px;
+  margin: 0.5rem;
+  padding: 1rem;
   border: 1px solid black;
   border-radius: 15px;
 }
@@ -83,14 +84,14 @@
 .Produto_Individual_Card_Padronizado:hover .Segunda_Parte {
   zoom: 1.2;
   top: -20px;
-  left: -20px;
+  left: -15px;
 }
 
 .Segunda_Parte {
   transition: transform 0.5s ease, opacity 1s ease, zoom 1s ease;
   position: absolute;
   top: 0px;
-  left: 0;
+  left: 0px;
   opacity: 0;
   z-index: 1;
 }
@@ -99,6 +100,161 @@
 }
 .Colecao_Do_Produto_Padronizado {
   font-size: 1rem;
+}
+
+.Modal_De_Produto_Nao_Visualizar {
+  display: none;
+}
+.Modal_De_Produto_Com_Vizualizacao {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Fechamento_De_Modal_De_Produto {
+  cursor: pointer;
+  width: 98%;
+  margin-top: 150px;
+  color: white;
+}
+.Fechamento_De_Modal_De_Produto:hover {
+  color: red;
+}
+.Corpo_Do_Modal {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.Conjunto_imagens_E_Miniaturas_Do_Modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100%;
+  margin-right: 10rem;
+}
+
+.Imagens_Do_Produto_Dentro_Do_Modal {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 650px;
+  margin-right: 10rem;
+  overflow: hidden;
+}
+
+.Miniaturas_Das_Imagens_Dos_Produtos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  zoom: 0.5;
+}
+
+.Imagem_Do_Produto_Modal {
+  transition: margin 1s ease, transform 0.2s ease;
+  cursor: zoom-in;
+  width: 100%;
+}
+
+.Miniaturas_Imagem_Do_Produto_Modal {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 1s ease;
+  width: 250px;
+}
+.Miniaturas_Imagem_Do_Produto_Modal:hover {
+  opacity: 0.8;
+}
+.Miniatura_Escolhida {
+  opacity: 1 !important;
+}
+.Informacoes_Do_Produto_No_Modal {
+  max-width: 500px;
+}
+.Nome_Do_Produto_Modal {
+  font-weight: bold;
+  font-size: 5rem;
+}
+.Colecao_Do_Produto_Modal {
+  font-size: 2rem;
+}
+.Preco_Do_Produto_Modal {
+  font-size: 3rem;
+}
+.Descricao_De_Materiais_Do_Produto_Modal {
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.Pontos_Positivos_Produto_Modal {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.Pontos_Positivos_Produto_Modal p {
+  margin-top: 1rem;
+}
+
+.Tamanho_De_Roupa_Do_Produto_Modal {
+  margin: 4rem 0 0 0;
+  display: flex;
+  height: 5rem;
+  justify-content: space-around;
+}
+
+.Opcoes_De_Tamanho_Individual {
+  cursor: pointer;
+  transition: color 0.5s ease, background 0.5s ease;
+  color: white;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 0 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.Opcoes_De_Tamanho_Individual:hover {
+  background-color: rgba(128, 128, 128, 0.399);
+}
+
+.Opcao_Selecionada_De_Tamanho {
+  background-color: gray;
+  color: black;
+}
+
+.Conjunto_Botoes_De_Compra_E_Carrinho {
+  display: flex;
+}
+
+.Botao_De_Compra_Produto_Modal {
+  flex-grow: 1;
+}
+
+.Conjunto_Botoes_De_Compra_E_Carrinho > button {
+  transition: color 0.5s ease, opacity 0.5s ease, background 0.5s ease;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  min-width: 15%;
+  background-color: white;
+  border: 1px solid black;
+  height: 50px;
+  margin: 2rem 0 0 0;
+}
+
+.Conjunto_Botoes_De_Compra_E_Carrinho > button:hover {
+  background-color: rgba(255, 255, 255, 0.573);
 }
 
 @media screen and (max-width: 1000px) {

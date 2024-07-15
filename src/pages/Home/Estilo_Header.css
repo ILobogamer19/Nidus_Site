@@ -1,6 +1,8 @@
 .Header_Geral_De_Cima {
   border-bottom: 2px solid grey;
   padding-bottom: 5px;
+  position: relative;
+  z-index: 99;
 }
 .Linha_De_Inicio {
   background-color: white;

@@ -37,7 +37,7 @@ export default function Chat_Suporte_Cliente() {
   //#endregion
 
   //#region useState
-  const [Chat_De_Suporte_Estado, setChat_De_Suporte_Estado] = useState(false);
+  const [Chat_De_Suporte_Estado, setChat_De_Suporte_Estado] = useState(true);
   const [Suporte_Ativo, setSuporte_Ativo] = useState();
   const [socket, setSocket] = useState(null);
   const [Mensagem_Para_Enviar, setMensagem_Para_Enviar] = useState("");
@@ -109,6 +109,7 @@ export default function Chat_Suporte_Cliente() {
         setSuporte_Ativo(data.Estado_Suporte);
 
         if (!data.Estado_Suporte) {
+          console.log("False");
           setChat_De_Suporte_Estado(false);
         }
       });
@@ -253,9 +254,7 @@ export default function Chat_Suporte_Cliente() {
   //#region Retorno do componente
   Verificacao_De_Estado_Do_Suporte();
 
-  return Chat_De_Suporte_Estado == ""
-    ? ""
-    : Chat_De_Suporte_Estado
+  return Chat_De_Suporte_Estado
     ? Chat_De_Suporte_Maximizado_Retorno()
     : Chat_De_Suporte_Minimizada_Retorno();
   //#endregion

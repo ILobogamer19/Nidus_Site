@@ -37,7 +37,14 @@ export default function Filtros_De_Produtos({
   Definir_Valor_Do_filtro,
 }) {
   return (
-    <div className="Filtros_De_Produtos_Conjunto">
+    <div
+      className="Filtros_De_Produtos_Conjunto"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          Definir_Valor_Do_filtro("");
+        }
+      }}
+    >
       <p
         className={
           Filtro_Ativo == ""
@@ -49,6 +56,8 @@ export default function Filtros_De_Produtos({
         }}
         style={{
           paddingLeft: "5px",
+          paddingBottom: "5px",
+          borderLeft: "0px",
         }}
       >
         Limpar Filtro

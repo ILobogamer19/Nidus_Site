@@ -15,7 +15,10 @@ var Produtos_Informacoes = Pacote_De_Configuracao.Produtos;
 
 //#endregion
 
-export default function Produtos_Principais({ Filtro_Ativo }) {
+export default function Produtos_Principais({
+  Filtro_Ativo,
+  Definir_Produto_Com_Modal_Ativo,
+}) {
   const [Imagem_Focada_Atualmente, setImagem_Focada_Atualmente] = useState();
 
   const Construcao_De_Produtos = (item) => {
@@ -28,6 +31,9 @@ export default function Produtos_Principais({ Filtro_Ativo }) {
         }}
         onMouseLeave={() => {
           setImagem_Focada_Atualmente();
+        }}
+        onClick={() => {
+          Definir_Produto_Com_Modal_Ativo(item);
         }}
       >
         <img

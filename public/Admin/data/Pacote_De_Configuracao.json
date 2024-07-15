@@ -1,923 +1,154 @@
 {
-  "Extencoes_De_Arquivo": [
+  "Opcoes_Do_Menu": [
     {
-      "Imagem": ".jpg",
-      "Imagem_2": ".png"
+      "Icon_Name": "fa-solid fa-user",
+      "Link": ""
+    },
+    {
+      "Icon_Name": "fa-solid fa-magnifying-glass",
+      "Link": ""
+    },
+    {
+      "Icon_Name": "fa-brands fa-instagram",
+      "Link": "https://www.instagram.com/_lucazpadilha/"
+    },
+    {
+      "Icon_Name": "fa-brands fa-whatsapp",
+      "Link": "https://wa.me/5515981401152"
+    },
+    {
+      "Type": "Cart",
+      "Icon_Name": "fa-solid fa-cart-shopping",
+      "Class": "Quantia_De_Itens_No_Carrinho",
+      "Link": ""
     }
   ],
-  "Numero_De_Contato": "5515997217784",
   "Navbar": [
     {
-      "Nome_Loja": "Bianka Modas",
-      "Logo_Img": "./img/Logo_Bianca.jpg",
-      "Nome_Loja_Class": "bianka",
-      "Dropdown_Itens": [
-        {
-          "Nome_Lista": "Roupas",
-          "Icon_Class": "ri-arrow-down-s-line dropdown__arrow",
-          "Itens": [
-            {
-              "Endereco": "#Conjunto_Categoria_Feminino",
-              "Nome": "Feminina"
-            },
-            {
-              "Endereco": "#Conjunto_Categoria_Infantil",
-              "Nome": "Infantil"
-            },
-            {
-              "Endereco": "#Conjunto_Categoria_Masculino",
-              "Nome": "Masculina"
-            }
-          ]
-        },
-        {
-          "Nome_Lista": "Contato",
-          "Icon_Class": "ri-arrow-down-s-line dropdown__arrow",
-          "Itens": [
-            {
-              "Endereco": "https://wa.me/5515997217784",
-              "Nome": "Bianka Loja"
-            },
-            {
-              "Endereco": "https://wa.me/5515997217784",
-              "Nome": "Bianka Pessoal"
-            }
-          ]
-        },
-        {
-          "Nome_Lista": "Outros",
-          "Icon_Class": "ri-arrow-down-s-line dropdown__arrow",
-          "Itens": [
-            {
-              "Endereco": "#",
-              "Nome": "Mercado Livre"
-            },
-            {
-              "Endereco": "https://www.instagram.com/bianka_modass/",
-              "Nome": "Instagram"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "Fita_De_Loja": [{ "Id": 1, "Local": "img/Fita_De_Loja.png" }],
-  "Categorias": [
-    {
-      "Id": 1,
-      "Nome": "Feminino",
-      "Local": "img/Categoria_Feminina.jpg",
-      "Alt": "Categoria Feminina",
-      "Endereco": "#Conjunto_Categoria_Feminino"
-    },
-    {
-      "Id": 2,
-      "Nome": "Infantil",
-      "Local": "img/Categoria_Infantil.jpg",
-      "Alt": "Categoria Infantil",
-      "Endereco": "#Conjunto_Categoria_Infantil"
-    },
-    {
-      "Id": 1,
-      "Nome": "Masculino",
-      "Local": "img/Categoria_Masculina.jpg",
-      "Alt": "Categoria Masculina",
-      "Endereco": "#Conjunto_Categoria_Masculino"
+      "Nome_Loja": "Nidus",
+      "Logo_Img": "./img/Logo_Nidus_Branca.png"
     }
   ],
   "Produtos": [
     {
-      "Destaques": [
-        {
-          "Categoria": "Feminino",
-          "Produtos": [
-            {
-              "Nome_Do_Produto": "Jaqueta de Couro"
-            },
-            {
-              "Nome_Do_Produto": "Top Esportivo"
-            },
-            {
-              "Nome_Do_Produto": "Casaco de Lã"
-            }
-          ]
-        },
-        {
-          "Categoria": "Infantil",
-          "Produtos": [
-            {
-              "Nome_Do_Produto": "Pocket Watch Leather Pouch"
-            },
-            {
-              "Nome_Do_Produto": "Silver Deer Heart Necklace"
-            },
-            {
-              "Nome_Do_Produto": "Titan 100 Ml Womens Perfume"
-            }
-          ]
-        },
-        {
-          "Categoria": "Masculino",
-          "Produtos": [
-            {
-              "Nome_Do_Produto": "Running & Trekking Shoes - White"
-            },
-            {
-              "Nome_Do_Produto": "Air Trekking Shoes - White"
-            },
-            {
-              "Nome_Do_Produto": "Trekking & Running Shoes - black"
-            }
-          ]
-        }
-      ],
-
-      "Produtos": [
-        {
-          "Categoria": "Feminino",
-          "Produtos": [
-            {
-              "Nome_Do_Produto": "Vestido Floral",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["S", "M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Blusa de Seda",
-              "Sub_Categoria_Produto": "Blusas",
-              "Carimbo": true,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Saia Plissada",
-              "Sub_Categoria_Produto": "Saias",
-              "Carimbo": true,
-              "Preco": "R$ 90,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Jeans Skinny",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": false,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts de Linho",
-              "Sub_Categoria_Produto": "Shorts",
-              "Carimbo": false,
-              "Preco": "R$ 70,00",
-              "Sem_Desconto": "R$ 90,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Casaco de Lã",
-              "Sub_Categoria_Produto": "Casacos",
-              "Carimbo": false,
-              "Preco": "R$ 200,00",
-              "Sem_Desconto": "R$ 250,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta de Couro",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": false,
-              "Preco": "R$ 300,00",
-              "Sem_Desconto": "R$ 350,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Cardigan de Tricô",
-              "Sub_Categoria_Produto": "Cardigans",
-              "Carimbo": false,
-              "Preco": "R$ 110,00",
-              "Sem_Desconto": "R$ 140,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Macacão de Algodão",
-              "Sub_Categoria_Produto": "Macacões",
-              "Carimbo": false,
-              "Preco": "R$ 130,00",
-              "Sem_Desconto": "R$ 160,00",
-              "Tamanhos": ["M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Básica",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": false,
-              "Preco": "R$ 50,00",
-              "Sem_Desconto": "R$ 70,00",
-              "Tamanhos": ["S", "M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Top Esportivo",
-              "Sub_Categoria_Produto": "Tops",
-              "Carimbo": false,
-              "Preco": "R$ 60,00",
-              "Sem_Desconto": "R$ 80,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Body Renda",
-              "Sub_Categoria_Produto": "Bodies",
-              "Carimbo": false,
-              "Preco": "R$ 75,00",
-              "Sem_Desconto": "R$ 95,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Vestido de Festa",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 250,00",
-              "Sem_Desconto": "R$ 300,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Blazer Alfaiataria",
-              "Sub_Categoria_Produto": "Blazers",
-              "Carimbo": false,
-              "Preco": "R$ 220,00",
-              "Sem_Desconto": "R$ 270,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Saia Lápis",
-              "Sub_Categoria_Produto": "Saias",
-              "Carimbo": true,
-              "Preco": "R$ 85,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Pantalona",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": false,
-              "Preco": "R$ 130,00",
-              "Sem_Desconto": "R$ 160,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts Jeans",
-              "Sub_Categoria_Produto": "Shorts",
-              "Carimbo": false,
-              "Preco": "R$ 60,00",
-              "Sem_Desconto": "R$ 80,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Trench Coat",
-              "Sub_Categoria_Produto": "Casacos",
-              "Carimbo": false,
-              "Preco": "R$ 250,00",
-              "Sem_Desconto": "R$ 300,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Jeans",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": false,
-              "Preco": "R$ 180,00",
-              "Sem_Desconto": "R$ 220,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Cardigan Longo",
-              "Sub_Categoria_Produto": "Cardigans",
-              "Carimbo": false,
-              "Preco": "R$ 100,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Macacão Estampado",
-              "Sub_Categoria_Produto": "Macacões",
-              "Carimbo": false,
-              "Preco": "R$ 140,00",
-              "Sem_Desconto": "R$ 180,00",
-              "Tamanhos": ["M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Estampada",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": false,
-              "Preco": "R$ 55,00",
-              "Sem_Desconto": "R$ 75,00",
-              "Tamanhos": ["S", "M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Top Cropped",
-              "Sub_Categoria_Produto": "Tops",
-              "Carimbo": false,
-              "Preco": "R$ 45,00",
-              "Sem_Desconto": "R$ 65,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Body Liso",
-              "Sub_Categoria_Produto": "Bodies",
-              "Carimbo": false,
-              "Preco": "R$ 70,00",
-              "Sem_Desconto": "R$ 90,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Vestido de Verão",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 100,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Blazer Casual",
-              "Sub_Categoria_Produto": "Blazers",
-              "Carimbo": false,
-              "Preco": "R$ 210,00",
-              "Sem_Desconto": "R$ 260,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Saia Midi",
-              "Sub_Categoria_Produto": "Saias",
-              "Carimbo": true,
-              "Preco": "R$ 95,00",
-              "Sem_Desconto": "R$ 120,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Pantacourt",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": false,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts de Cintura Alta",
-              "Sub_Categoria_Produto": "Shorts",
-              "Carimbo": false,
-              "Preco": "R$ 65,00",
-              "Sem_Desconto": "R$ 85,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Casaco Puffer",
-              "Sub_Categoria_Produto": "Casacos",
-              "Carimbo": false,
-              "Preco": "R$ 280,00",
-              "Sem_Desconto": "R$ 320,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Bomber",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": false,
-              "Preco": "R$ 190,00",
-              "Sem_Desconto": "R$ 230,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Cardigan de Lã",
-              "Sub_Categoria_Produto": "Cardigans",
-              "Carimbo": false,
-              "Preco": "R$ 115,00",
-              "Sem_Desconto": "R$ 145,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Macacão Social",
-              "Sub_Categoria_Produto": "Macacões",
-              "Carimbo": false,
-              "Preco": "R$ 150,00",
-              "Sem_Desconto": "R$ 190,00",
-              "Tamanhos": ["M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Listrada",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": false,
-              "Preco": "R$ 60,00",
-              "Sem_Desconto": "R$ 80,00",
-              "Tamanhos": ["S", "M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Top de Renda",
-              "Sub_Categoria_Produto": "Tops",
-              "Carimbo": false,
-              "Preco": "R$ 50,00",
-              "Sem_Desconto": "R$ 70,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Body Estampado",
-              "Sub_Categoria_Produto": "Bodies",
-              "Carimbo": false,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Vestido Longo",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 180,00",
-              "Sem_Desconto": "R$ 220,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Blazer Estruturado",
-              "Sub_Categoria_Produto": "Blazers",
-              "Carimbo": false,
-              "Preco": "R$ 230,00",
-              "Sem_Desconto": "R$ 280,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Saia Godê",
-              "Sub_Categoria_Produto": "Saias",
-              "Carimbo": true,
-              "Preco": "R$ 105,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Flare",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": false,
-              "Preco": "R$ 140,00",
-              "Sem_Desconto": "R$ 170,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts Tecido",
-              "Sub_Categoria_Produto": "Shorts",
-              "Carimbo": false,
-              "Preco": "R$ 55,00",
-              "Sem_Desconto": "R$ 75,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Casaco de Veludo",
-              "Sub_Categoria_Produto": "Casacos",
-              "Carimbo": false,
-              "Preco": "R$ 270,00",
-              "Sem_Desconto": "R$ 320,00",
-              "Tamanhos": ["M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta de Sarja",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": false,
-              "Preco": "R$ 160,00",
-              "Sem_Desconto": "R$ 200,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Cardigan Aberto",
-              "Sub_Categoria_Produto": "Cardigans",
-              "Carimbo": false,
-              "Preco": "R$ 105,00",
-              "Sem_Desconto": "R$ 135,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Macacão Curto",
-              "Sub_Categoria_Produto": "Macacões",
-              "Carimbo": false,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Bordada",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": false,
-              "Preco": "R$ 70,00",
-              "Sem_Desconto": "R$ 90,00",
-              "Tamanhos": ["S", "M", "L", "XL"]
-            },
-            {
-              "Nome_Do_Produto": "Top com Bojo",
-              "Sub_Categoria_Produto": "Tops",
-              "Carimbo": false,
-              "Preco": "R$ 40,00",
-              "Sem_Desconto": "R$ 60,00",
-              "Tamanhos": ["S", "M"]
-            },
-            {
-              "Nome_Do_Produto": "Body Cavado",
-              "Sub_Categoria_Produto": "Bodies",
-              "Carimbo": false,
-              "Preco": "R$ 85,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["S", "M", "L"]
-            },
-            {
-              "Nome_Do_Produto": "Vestido Midi",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 150,00",
-              "Sem_Desconto": "R$ 190,00",
-              "Tamanhos": ["M", "L", "XL"]
-            }
-          ]
-        },
-        {
-          "Categoria": "Infantil",
-          "Produtos": [
-            {
-              "Nome_Do_Produto": "Vestido Infantil Estampado",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Infantil com Desenho",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 30,00",
-              "Sem_Desconto": "R$ 40,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Jeans Infantil",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 60,00",
-              "Sem_Desconto": "R$ 80,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Conjunto Moletom Infantil",
-              "Sub_Categoria_Produto": "Conjuntos",
-              "Carimbo": true,
-              "Preco": "R$ 100,00",
-              "Sem_Desconto": "R$ 120,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Infantil",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": true,
-              "Preco": "R$ 90,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts Infantil",
-              "Sub_Categoria_Produto": "Shorts",
-              "Carimbo": true,
-              "Preco": "R$ 40,00",
-              "Sem_Desconto": "R$ 50,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Saia Infantil",
-              "Sub_Categoria_Produto": "Saias",
-              "Carimbo": true,
-              "Preco": "R$ 50,00",
-              "Sem_Desconto": "R$ 60,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Blusa Infantil Estampada",
-              "Sub_Categoria_Produto": "Blusas",
-              "Carimbo": true,
-              "Preco": "R$ 35,00",
-              "Sem_Desconto": "R$ 45,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Casaco de Inverno Infantil",
-              "Sub_Categoria_Produto": "Casacos",
-              "Carimbo": true,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Vestido Infantil de Festa",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Manga Longa Infantil",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 40,00",
-              "Sem_Desconto": "R$ 50,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Legging Infantil",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 45,00",
-              "Sem_Desconto": "R$ 55,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Conjunto de Verão Infantil",
-              "Sub_Categoria_Produto": "Conjuntos",
-              "Carimbo": true,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Corta Vento Infantil",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": true,
-              "Preco": "R$ 70,00",
-              "Sem_Desconto": "R$ 90,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts de Tecido Infantil",
-              "Sub_Categoria_Produto": "Shorts",
-              "Carimbo": true,
-              "Preco": "R$ 30,00",
-              "Sem_Desconto": "R$ 40,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Saia Plissada Infantil",
-              "Sub_Categoria_Produto": "Saias",
-              "Carimbo": true,
-              "Preco": "R$ 45,00",
-              "Sem_Desconto": "R$ 55,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Blusa de Algodão Infantil",
-              "Sub_Categoria_Produto": "Blusas",
-              "Carimbo": true,
-              "Preco": "R$ 25,00",
-              "Sem_Desconto": "R$ 30,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Casaco de Pelúcia Infantil",
-              "Sub_Categoria_Produto": "Casacos",
-              "Carimbo": true,
-              "Preco": "R$ 150,00",
-              "Sem_Desconto": "R$ 180,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Vestido Estampado com Laço",
-              "Sub_Categoria_Produto": "Vestidos",
-              "Carimbo": true,
-              "Preco": "R$ 90,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta com Estampa Divertida",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 35,00",
-              "Sem_Desconto": "R$ 45,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Legging com Detalhe",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 50,00",
-              "Sem_Desconto": "R$ 60,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            },
-            {
-              "Nome_Do_Produto": "Conjunto Moletom com Capuz",
-              "Sub_Categoria_Produto": "Conjuntos",
-              "Carimbo": true,
-              "Preco": "R$ 110,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["2", "4", "6", "8", "10"]
-            }
-          ]
-        },
-        {
-          "Categoria": "Masculino",
-          "Produtos": [
-            {
-              "Nome_Do_Produto": "Camiseta Polo",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 70,00",
-              "Sem_Desconto": "R$ 90,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Camisa Social",
-              "Sub_Categoria_Produto": "Camisas",
-              "Carimbo": true,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Jeans",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 100,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Bermuda Cargo",
-              "Sub_Categoria_Produto": "Bermudas",
-              "Carimbo": true,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Jeans",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": true,
-              "Preco": "R$ 150,00",
-              "Sem_Desconto": "R$ 180,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Básica",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 50,00",
-              "Sem_Desconto": "R$ 70,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Camisa Xadrez",
-              "Sub_Categoria_Produto": "Camisas",
-              "Carimbo": true,
-              "Preco": "R$ 90,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Social",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 130,00",
-              "Sem_Desconto": "R$ 160,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Bermuda Jeans",
-              "Sub_Categoria_Produto": "Bermudas",
-              "Carimbo": true,
-              "Preco": "R$ 70,00",
-              "Sem_Desconto": "R$ 90,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Corta Vento",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": true,
-              "Preco": "R$ 120,00",
-              "Sem_Desconto": "R$ 150,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Regata Esportiva",
-              "Sub_Categoria_Produto": "Regatas",
-              "Carimbo": true,
-              "Preco": "R$ 40,00",
-              "Sem_Desconto": "R$ 60,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Moletom com Capuz",
-              "Sub_Categoria_Produto": "Moletons",
-              "Carimbo": true,
-              "Preco": "R$ 110,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Polo Listrada",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Camisa Jeans",
-              "Sub_Categoria_Produto": "Camisas",
-              "Carimbo": true,
-              "Preco": "R$ 100,00",
-              "Sem_Desconto": "R$ 120,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Calça Cargo",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 90,00",
-              "Sem_Desconto": "R$ 110,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Shorts Esportivo",
-              "Sub_Categoria_Produto": "Bermudas",
-              "Carimbo": true,
-              "Preco": "R$ 60,00",
-              "Sem_Desconto": "R$ 80,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Corta Vento com Capuz",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": true,
-              "Preco": "R$ 160,00",
-              "Sem_Desconto": "R$ 190,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Camiseta Manga Longa",
-              "Sub_Categoria_Produto": "Camisetas",
-              "Carimbo": true,
-              "Preco": "R$ 60,00",
-              "Sem_Desconto": "R$ 80,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Camisa Estampada",
-              "Sub_Categoria_Produto": "Camisas",
-              "Carimbo": true,
-              "Preco": "R$ 80,00",
-              "Sem_Desconto": "R$ 100,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Calça de Sarja",
-              "Sub_Categoria_Produto": "Calças",
-              "Carimbo": true,
-              "Preco": "R$ 110,00",
-              "Sem_Desconto": "R$ 130,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Bermuda de Praia",
-              "Sub_Categoria_Produto": "Bermudas",
-              "Carimbo": true,
-              "Preco": "R$ 50,00",
-              "Sem_Desconto": "R$ 70,00",
-              "Tamanhos": ["38", "40", "42", "44"]
-            },
-            {
-              "Nome_Do_Produto": "Jaqueta Corta Vento Esportiva",
-              "Sub_Categoria_Produto": "Jaquetas",
-              "Carimbo": true,
-              "Preco": "R$ 130,00",
-              "Sem_Desconto": "R$ 160,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            },
-            {
-              "Nome_Do_Produto": "Regata Básica",
-              "Sub_Categoria_Produto": "Regatas",
-              "Carimbo": true,
-              "Preco": "R$ 30,00",
-              "Sem_Desconto": "R$ 40,00",
-              "Tamanhos": ["P", "M", "G", "GG"]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "Rodape": [
+      "Id": 1,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus One",
+      "Descricao": "A camiseta que sera vendida ate a Nidus completar seu primeiro ano de idade",
+      "Descricao_De_Materiais": "Camiseta feita com malha 100% algodão, que trás maior conforto, e estampa feita a partir da tecnologia de silk-screen",
+      "Pontos_Positivos": ["Design Moderno", "Confortavel", "Facil manuseio"],
+      "Preco": 90.0,
+      "Colecao": "Nidus Originals",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Originals", "Basic"]
+    },
     {
-      "Imagem": "img/Rodape/Rodape.png",
-      "Redes_Sociais": [
-        {
-          "Icon": "fa-brands fa-instagram",
-          "Link": "https://www.instagram.com/bianka_modass?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-          "Cor_Do_Icone": "linear-gradient(150deg, #833AB4, #E1306C, #FD1D1D, #FCAF45)"
-        },
-        {
-          "Icon": "fa-brands fa-whatsapp",
-          "Link": "https://wa.me/5515997217784",
-          "Cor_Do_Icone": "#00e604"
-        }
-      ]
+      "Id": 2,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Prime",
+      "Descricao": "A primeira camiseta Nidus, onde tudo começou",
+      "Descricao_De_Materiais": "Camiseta feita com malha 100% algodão, que trás maior conforto, e estampa feita a partir da tecnologia de silk-screen",
+      "Pontos_Positivos": ["Design Moderno", "Confortavel", "Facil manuseio"],
+      "Preco": 90.0,
+      "Colecao": "Nidus Originals",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Originals", "Basic"]
+    },
+    {
+      "Id": 3,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus T-Shirt",
+      "Descricao": "Camiseta Basica da Nidus, trazendo um conforto que cabe no seu bolso",
+      "Descricao_De_Materiais": "Camiseta feita com malha 100% algodão, que trás maior conforto, e estampa feita a partir da tecnologia de silk-screen",
+      "Pontos_Positivos": ["Design Moderno", "Confortavel", "Facil manuseio"],
+      "Preco": 90.0,
+      "Colecao": "Nidus Originals",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Originals", "Simple"]
+    },
+    {
+      "Id": 4,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Sport",
+      "Descricao": "Camiseta esportiva da Nidus, ideal para atividades físicas",
+      "Descricao_De_Materiais": "Camiseta feita com tecido dry-fit, que permite melhor ventilação e rápida secagem",
+      "Pontos_Positivos": ["Respirável", "Leve", "Secagem rápida"],
+      "Preco": 100.0,
+      "Colecao": "Nidus Active",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Active", "Sport"]
+    },
+    {
+      "Id": 5,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Eco",
+      "Descricao": "Camiseta sustentável da Nidus, feita com materiais reciclados",
+      "Descricao_De_Materiais": "Camiseta feita com 50% algodão orgânico e 50% poliéster reciclado",
+      "Pontos_Positivos": ["Sustentável", "Confortável", "Estilosa"],
+      "Preco": 110.0,
+      "Colecao": "Nidus Eco",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Eco", "Sustainable"]
+    },
+    {
+      "Id": 6,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Classic",
+      "Descricao": "Camiseta clássica da Nidus, para todos os momentos",
+      "Descricao_De_Materiais": "Camiseta feita com 100% algodão premium, macio e durável",
+      "Pontos_Positivos": ["Versátil", "Durável", "Confortável"],
+      "Preco": 95.0,
+      "Colecao": "Nidus Classics",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Classics", "Timeless"]
+    },
+    {
+      "Id": 7,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Urban",
+      "Descricao": "Camiseta urbana da Nidus, para um estilo moderno",
+      "Descricao_De_Materiais": "Camiseta feita com algodão e elastano, proporcionando flexibilidade e conforto",
+      "Pontos_Positivos": ["Moderna", "Flexível", "Confortável"],
+      "Preco": 105.0,
+      "Colecao": "Nidus Urban",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Urban", "Trendy"]
+    },
+    {
+      "Id": 8,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Tech",
+      "Descricao": "Camiseta tecnológica da Nidus, com proteção UV",
+      "Descricao_De_Materiais": "Camiseta feita com tecido tecnológico que oferece proteção contra os raios UV",
+      "Pontos_Positivos": ["Proteção UV", "Confortável", "Moderna"],
+      "Preco": 115.0,
+      "Colecao": "Nidus Tech",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Tech", "High-tech"]
+    },
+    {
+      "Id": 9,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Retro",
+      "Descricao": "Camiseta retrô da Nidus, inspirada nos anos 80",
+      "Descricao_De_Materiais": "Camiseta feita com algodão vintage, com acabamento desgastado",
+      "Pontos_Positivos": ["Estilo retrô", "Confortável", "Despojada"],
+      "Preco": 120.0,
+      "Colecao": "Nidus Retro",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Retro", "Vintage"]
+    },
+    {
+      "Id": 10,
+      "Tipo": "Camiseta",
+      "Nome": "Nidus Lux",
+      "Descricao": "Camiseta de luxo da Nidus, para ocasiões especiais",
+      "Descricao_De_Materiais": "Camiseta feita com algodão egípcio, com toque macio e acabamento refinado",
+      "Pontos_Positivos": ["Luxuosa", "Confortável", "Elegante"],
+      "Preco": 150.0,
+      "Colecao": "Nidus Lux",
+      "Tamanhos": ["P", "M", "G", "L"],
+      "Filtros": ["Nidus Lux", "Luxury"]
     }
   ]
 }
