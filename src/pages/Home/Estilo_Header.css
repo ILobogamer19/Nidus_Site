@@ -89,5 +89,6 @@
   color: red;
 }
 .Conjunto_Carrinho_E_Numeracao:hover {
+  cursor: pointer;
   color: red !important;
 }

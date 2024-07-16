@@ -4,7 +4,10 @@ import Busca_De_Pacote_JSON, {
   Busca_De_Configuracoes_JSON,
 } from "./Ferramentas/Busca_De_Pacote_JSON";
 
-export default function Header_Component() {
+export default function Header_Component({
+  Quantidade_De_Itens_Adicionados_No_Carrinho,
+  Definir_Endereco_Atual_Da_Pagina_Local,
+}) {
   const [Estado_De_Visualizacao, setEstado_De_Visualizacao] = useState(true);
   const [Tamanho_Largura_Pagina, setTamanho_Largura_Pagina] = useState(
     window.innerWidth
@@ -25,7 +28,7 @@ export default function Header_Component() {
     } else {
       const timer = setTimeout(() => {
         setTemporalizador_Ativacao_De_Clicks(0);
-      }, 200);
+      }, 500);
 
       return () => clearTimeout(timer);
     }
@@ -46,6 +49,38 @@ export default function Header_Component() {
     Criador_De_Pacote();
   }, []);
 
+  const Retorno_De_Icon_Carrinho = (item, index, Tela_Pequena) => (
+    <div
+      key={"Conjunto_De_Ferramentas_Opacity " + index + item.Icon_Name}
+      className="Conjunto_Carrinho_E_Numeracao"
+      onClick={() => {
+        if (Quantidade_De_Itens_Adicionados_No_Carrinho <= 0) {
+          alert("Não existe nenhum item no carrinho");
+        } else if (
+          Definir_Endereco_Atual_Da_Pagina_Local !== "Carrinho_De_Compras"
+        ) {
+          Definir_Endereco_Atual_Da_Pagina_Local("Carrinho_De_Compras");
+        }
+      }}
+    >
+      <i className={item.Icon_Name}></i>
+      <p
+        className={item.Class}
+        style={
+          Quantidade_De_Itens_Adicionados_No_Carrinho == 0
+            ? Tela_Pequena
+              ? { opacity: 1 }
+              : { opacity: 0 }
+            : {
+                opacity: 1,
+              }
+        }
+      >
+        {Quantidade_De_Itens_Adicionados_No_Carrinho}
+      </p>
+    </div>
+  );
+
   return (
     <header className="Header_Geral_De_Cima">
       <div className="Linha_De_Inicio">
@@ -60,24 +95,7 @@ export default function Header_Component() {
               {Opcoes_Do_Menu &&
                 Opcoes_Do_Menu.map((item, index) => {
                   if (item.Type && item.Type == "Cart") {
-                    return (
-                      <div
-                        key={
-                          "Conjunto_De_Ferramentas_Opacity " +
-                          index +
-                          item.Icon_Name
-                        }
-                        className="Conjunto_Carrinho_E_Numeracao"
-                        onClick={() => {
-                          item.Link
-                            ? window.open(item.Link, "_blank")
-                            : console.log("asasas");
-                        }}
-                      >
-                        <i className={item.Icon_Name}></i>
-                        <p className={item.Class}>0</p>
-                      </div>
-                    );
+                    return Retorno_De_Icon_Carrinho(item, index, false);
                   }
                   return (
                     <React.Fragment
@@ -114,6 +132,7 @@ export default function Header_Component() {
             setEstado_De_Visualizacao(false);
           }}
           onClick={() => {
+            Definir_Endereco_Atual_Da_Pagina_Local("Inicio");
             setTemporalizador_Ativacao_De_Clicks((current) => {
               return current + 1;
             });
@@ -154,7 +173,11 @@ export default function Header_Component() {
                 color: "red",
               }}
             ></i>
-            {Opcoes_Do_Menu.map((item) => {
+            {Opcoes_Do_Menu.map((item, index) => {
+              if (item.Type == "Cart") {
+                return Retorno_De_Icon_Carrinho(item, index, true);
+              }
+
               return (
                 <i
                   key={"Ferramenta_Icone_separado " + item.Icon_Name}
@@ -168,24 +191,7 @@ export default function Header_Component() {
             {Opcoes_Do_Menu &&
               Opcoes_Do_Menu.map((item, index) => {
                 if (item.Type && item.Type == "Cart") {
-                  return (
-                    <div
-                      key={
-                        "Conjunto_De_Ferramentas_Normal " +
-                        index +
-                        item.Icon_Name
-                      }
-                      className="Conjunto_Carrinho_E_Numeracao"
-                      onClick={() => {
-                        item.Link
-                          ? window.open(item.Link, "_blank")
-                          : console.log("asasas");
-                      }}
-                    >
-                      <i className={item.Icon_Name}></i>
-                      <p className={item.Class}>0</p>
-                    </div>
-                  );
+                  return Retorno_De_Icon_Carrinho(item, index, false);
                 }
                 return (
                   <React.Fragment

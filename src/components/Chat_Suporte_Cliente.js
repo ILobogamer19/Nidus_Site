@@ -37,7 +37,7 @@ export default function Chat_Suporte_Cliente() {
   //#endregion
 
   //#region useState
-  const [Chat_De_Suporte_Estado, setChat_De_Suporte_Estado] = useState(true);
+  const [Chat_De_Suporte_Estado, setChat_De_Suporte_Estado] = useState(false);
   const [Suporte_Ativo, setSuporte_Ativo] = useState();
   const [socket, setSocket] = useState(null);
   const [Mensagem_Para_Enviar, setMensagem_Para_Enviar] = useState("");
@@ -45,14 +45,6 @@ export default function Chat_Suporte_Cliente() {
   //#endregion
 
   //#region useEffect
-  // useEffect(() => {
-  //   if (socket) {
-  //     socket.on("Suporte_Estado", (data) => {
-  //       setSuporte_Ativo(data.Estado_Suporte);
-  //     });
-  //   }
-  // }, []);
-
   useEffect(() => {
     if (socket) {
       socket.on("receive_message", (data) => {
@@ -109,7 +101,6 @@ export default function Chat_Suporte_Cliente() {
         setSuporte_Ativo(data.Estado_Suporte);
 
         if (!data.Estado_Suporte) {
-          console.log("False");
           setChat_De_Suporte_Estado(false);
         }
       });
@@ -229,13 +220,22 @@ export default function Chat_Suporte_Cliente() {
       return (
         <div
           className="Chat_De_Suporte_Minimizada"
+          style={
+            Suporte_Ativo
+              ? {}
+              : {
+                  width: "0px",
+                  height: "initial",
+                  border: "none",
+                }
+          }
           onClick={() => {
             Suporte_Ativo
               ? setChat_De_Suporte_Estado(true)
               : alert("Nenhum atendente online");
           }}
         >
-          <p>Suporte {Suporte_Ativo ? "Online" : "Offline"}</p>
+          {Suporte_Ativo && <p>Suporte Online</p>}
 
           <span
             className="material-symbols-outlined"
@@ -254,8 +254,31 @@ export default function Chat_Suporte_Cliente() {
   //#region Retorno do componente
   Verificacao_De_Estado_Do_Suporte();
 
-  return Chat_De_Suporte_Estado
-    ? Chat_De_Suporte_Maximizado_Retorno()
-    : Chat_De_Suporte_Minimizada_Retorno();
+  return Chat_De_Suporte_Estado === "" ? (
+    <div
+      className="Chat_De_Suporte_Minimizada"
+      style={{
+        width: "0px",
+        height: "initial",
+        border: "none",
+      }}
+      onClick={() => {
+        Suporte_Ativo
+          ? setChat_De_Suporte_Estado(true)
+          : alert("Nenhum atendente online");
+      }}
+    >
+      <span
+        className="material-symbols-outlined"
+        style={Suporte_Ativo ? { color: "green" } : { color: "red" }}
+      >
+        radio_button_checked
+      </span>
+    </div>
+  ) : Chat_De_Suporte_Estado ? (
+    Chat_De_Suporte_Maximizado_Retorno()
+  ) : (
+    Chat_De_Suporte_Minimizada_Retorno()
+  );
   //#endregion
 }

@@ -3,11 +3,13 @@ import { useState } from "react";
 export default function Modal_De_Produto({
   Produto_Com_Modal_Ativo,
   Definir_Produto_Com_Modal_Ativo,
+  Definir_Quantidade_De_Itens_Adicionados_No_Carrinho,
+  Definir_Itens_Adicionados_No_Carrinho,
 }) {
   const [
     Tamanho_De_Roupa_Escolhido_Vizualizar_Botao,
     setTamanho_De_Roupa_Escolhido_Vizualizar_Botao,
-  ] = useState("");
+  ] = useState(null);
   const [Imagem_Em_Vizualizacao_Do_Modal, setImagem_Em_Vizualizacao_Do_Modal] =
     useState(0);
   const [Zoom_Dentro_Da_Imagem, setZoom_Dentro_Da_Imagem] = useState({});
@@ -47,7 +49,7 @@ export default function Modal_De_Produto({
         onClick={() => {
           Definir_Produto_Com_Modal_Ativo("");
           setImagem_Em_Vizualizacao_Do_Modal(0);
-          setTamanho_De_Roupa_Escolhido_Vizualizar_Botao("");
+          setTamanho_De_Roupa_Escolhido_Vizualizar_Botao(null);
         }}
       ></i>
       <div className="Corpo_Do_Modal">
@@ -148,7 +150,7 @@ export default function Modal_De_Produto({
               ? Produto_Com_Modal_Ativo.Pontos_Positivos.map((item) => {
                   return (
                     <p key={"Pontos_Positivos " + item}>
-                      <i class="fa-solid fa-star"></i> {item}
+                      <i className="fa-solid fa-star"></i> {item}
                     </p>
                   );
                 })
@@ -157,17 +159,17 @@ export default function Modal_De_Produto({
 
           <div className="Tamanho_De_Roupa_Do_Produto_Modal">
             {Produto_Com_Modal_Ativo.Tamanhos &&
-              Produto_Com_Modal_Ativo.Tamanhos.map((item) => {
+              Produto_Com_Modal_Ativo.Tamanhos.map((item, index) => {
                 return (
                   <button
-                    key={"Buttons_De_Tamanho " + { item }}
+                    key={"Buttons_De_Tamanho " + item}
                     className={
-                      Tamanho_De_Roupa_Escolhido_Vizualizar_Botao == item
+                      Tamanho_De_Roupa_Escolhido_Vizualizar_Botao == index
                         ? "Opcoes_De_Tamanho_Individual Opcao_Selecionada_De_Tamanho"
                         : "Opcoes_De_Tamanho_Individual"
                     }
                     onClick={() => {
-                      setTamanho_De_Roupa_Escolhido_Vizualizar_Botao(item);
+                      setTamanho_De_Roupa_Escolhido_Vizualizar_Botao(index);
                     }}
                   >
                     {item}
@@ -180,7 +182,7 @@ export default function Modal_De_Produto({
             <button
               className="Botao_De_Compra_Produto_Modal"
               style={
-                Tamanho_De_Roupa_Escolhido_Vizualizar_Botao !== ""
+                Tamanho_De_Roupa_Escolhido_Vizualizar_Botao !== null
                   ? { opacity: 1 }
                   : { opacity: 0 }
               }
@@ -188,8 +190,55 @@ export default function Modal_De_Produto({
               Comprar
             </button>
             <button
+              onClick={() => {
+                Definir_Quantidade_De_Itens_Adicionados_No_Carrinho((prev) => {
+                  return prev + 1;
+                });
+                Definir_Itens_Adicionados_No_Carrinho((prev) => {
+                  var Definicao_De_Tamanho_De_Roupa =
+                    Produto_Com_Modal_Ativo.Tamanhos;
+
+                  var Teste_De_Validacao_De_Duplicidade = true;
+
+                  prev.map((sub_item) => {
+                    if (
+                      Produto_Com_Modal_Ativo.Id == sub_item.Id &&
+                      Definicao_De_Tamanho_De_Roupa[
+                        Tamanho_De_Roupa_Escolhido_Vizualizar_Botao
+                      ] == sub_item.Tamanhos
+                    ) {
+                      Teste_De_Validacao_De_Duplicidade = false;
+
+                      if (sub_item.Removido) {
+                        sub_item.Removido = false;
+                        sub_item.Quantidade_Do_Produto = 1;
+                      } else {
+                        sub_item.Quantidade_Do_Produto =
+                          sub_item.Quantidade_Do_Produto + 1;
+                      }
+
+                      return sub_item;
+                    }
+                  });
+
+                  var Adicao_De_Produto_No_Carrinho = {
+                    ...Produto_Com_Modal_Ativo,
+                    Tamanhos:
+                      Definicao_De_Tamanho_De_Roupa[
+                        Tamanho_De_Roupa_Escolhido_Vizualizar_Botao
+                      ],
+                    Quantidade_Do_Produto: 1,
+                  };
+
+                  if (Teste_De_Validacao_De_Duplicidade) {
+                    return [...prev, Adicao_De_Produto_No_Carrinho];
+                  } else {
+                    return [...prev];
+                  }
+                });
+              }}
               style={
-                Tamanho_De_Roupa_Escolhido_Vizualizar_Botao !== ""
+                Tamanho_De_Roupa_Escolhido_Vizualizar_Botao !== null
                   ? { opacity: 1 }
                   : { opacity: 0 }
               }
@@ -199,9 +248,6 @@ export default function Modal_De_Produto({
           </div>
         </div>
       </div>
-      {/* <div className="Extras_Do_Produto_Pelo_Modal">
-        <p>{Produto_Com_Modal_Ativo.Descricao}</p>
-      </div> */}
     </div>
   );
 }

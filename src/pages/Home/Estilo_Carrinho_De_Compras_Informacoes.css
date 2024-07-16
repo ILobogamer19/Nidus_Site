@@ -1,0 +1,112 @@
+.Conjunto_De_Produtos_Do_Carrinho {
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh auto;
+  height: 100%;
+}
+
+.Produtos_Com_Nome_Em_Cima_Formato_De_Tabela {
+  display: flex;
+  color: black;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  align-items: center;
+  max-height: 300px;
+
+  text-align: center;
+}
+
+.Card_Deitado_Do_Produto_No_Carrinho {
+  display: flex;
+  border-radius: 20px;
+  background-color: black;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  align-items: center;
+  max-height: 300px;
+
+  text-align: center;
+}
+
+.Icon_Ajuste_Cart_Individual_Padronizacao {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.Imagem_Ajuste_Cart_Individual_Padronizacao {
+  width: 14.587rem;
+}
+
+.Nome_Ajuste_Cart_Individual_Padronizacao {
+  width: 10rem;
+}
+
+.Tamanho_Ajuste_Cart_Individual_Padronizacao {
+  width: 5rem;
+}
+
+.Preco_Ajuste_Cart_Individual_Padronizacao {
+  width: 6rem;
+}
+
+.Quantidade_Ajuste_Cart_Individual_Padronizacao {
+  width: 7rem;
+}
+
+.Subtotal_Ajuste_Cart_Individual_Padronizacao {
+  width: 8rem;
+}
+
+.Remocao_De_Produto_Do_Carrinho {
+  transition: color 0.2s ease, background 0.2s ease;
+  color: white;
+  background-color: transparent;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  border-radius: 10rem;
+}
+
+.Remocao_De_Produto_Do_Carrinho:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.Imagem_De_Card_De_Carrinho_Individual {
+  max-height: 300px;
+}
+
+.Botao_De_Compra_Do_Carrinho_Conjunto {
+  margin: 0 2vw;
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.Botao_De_Compra_Do_Carrinho_Individual {
+  cursor: pointer;
+  flex-grow: 1;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 2rem;
+  height: auto;
+}
+.Botao_De_Compra_Do_Carrinho_Individual:hover {
+  background-color: rgba(255, 255, 255, 0.473);
+}
+.Valor_Total_Soma_Dos_Itens {
+  font-size: 4rem;
+  border-radius: 5px;
+}
