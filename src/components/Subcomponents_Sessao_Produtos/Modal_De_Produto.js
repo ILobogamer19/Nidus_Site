@@ -5,6 +5,9 @@ export default function Modal_De_Produto({
   Definir_Produto_Com_Modal_Ativo,
   Definir_Quantidade_De_Itens_Adicionados_No_Carrinho,
   Definir_Itens_Adicionados_No_Carrinho,
+  Definir_Endereco_Atual_Da_Pagina_Local,
+  Definir_Valor_Total_Guardado_Dentro_Do_Carrinho,
+  Definir_Estilo_De_Compra_Carrinho_Ou_Unica,
 }) {
   const [
     Tamanho_De_Roupa_Escolhido_Vizualizar_Botao,
@@ -186,11 +189,22 @@ export default function Modal_De_Produto({
                   ? { opacity: 1 }
                   : { opacity: 0 }
               }
+              onClick={() => {
+                Definir_Estilo_De_Compra_Carrinho_Ou_Unica("Unica");
+                Definir_Valor_Total_Guardado_Dentro_Do_Carrinho(
+                  Produto_Com_Modal_Ativo.Preco
+                );
+                Definir_Endereco_Atual_Da_Pagina_Local(
+                  "Escolher_Metodo_De_Pagamento"
+                );
+              }}
             >
               Comprar
             </button>
             <button
               onClick={() => {
+                Definir_Estilo_De_Compra_Carrinho_Ou_Unica("Carrinho");
+
                 Definir_Quantidade_De_Itens_Adicionados_No_Carrinho((prev) => {
                   return prev + 1;
                 });

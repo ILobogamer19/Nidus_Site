@@ -224,7 +224,7 @@ export default function Header_Component({
               setVizualizacao_De_Menu(true);
             }}
           >
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </div>
         )}
       </div>

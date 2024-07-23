@@ -4,6 +4,9 @@ export default function Carrinho_De_Compras_Informacoes({
   Itens_Adicionados_No_Carrinho,
   Definir_Quantidade_De_Itens_Adicionados_No_Carrinho,
   Definir_Itens_Adicionados_No_Carrinho,
+  Definir_Endereco_Atual_Da_Pagina_Local,
+  Definir_Valor_Total_Guardado_Dentro_Do_Carrinho,
+  Definir_Estilo_De_Compra_Carrinho_Ou_Unica,
 }) {
   var Valor_Total_Geral_Dos_Produtos = 0;
 
@@ -122,7 +125,15 @@ export default function Carrinho_De_Compras_Informacoes({
         })}
       </div>
       <div className="Botao_De_Compra_Do_Carrinho_Conjunto">
-        <button className="Botao_De_Compra_Do_Carrinho_Individual">
+        <button
+          className="Botao_De_Compra_Do_Carrinho_Individual"
+          onClick={() => {
+            Definir_Estilo_De_Compra_Carrinho_Ou_Unica("Carrinho");
+            Definir_Endereco_Atual_Da_Pagina_Local(
+              "Escolher_Metodo_De_Pagamento"
+            );
+          }}
+        >
           Comprar agora
         </button>
         <p className="Valor_Total_Soma_Dos_Itens">
@@ -131,6 +142,10 @@ export default function Carrinho_De_Compras_Informacoes({
             ? Valor_Total_Geral_Dos_Produtos.toString().replace(".", ",")
             : Valor_Total_Geral_Dos_Produtos + ",00"}
         </p>
+        {console.log("Valor total guardado: " + Valor_Total_Geral_Dos_Produtos)}
+        {Definir_Valor_Total_Guardado_Dentro_Do_Carrinho(
+          Valor_Total_Geral_Dos_Produtos
+        )}
       </div>
     </>
   );
