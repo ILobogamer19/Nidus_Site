@@ -144,11 +144,6 @@ export default function Metodo_De_Pagamento_Cartao_De_Credito({
                     document.getElementById("fail-response").style.display =
                       "block";
                   }
-
-                  $(".container__payment").fadeOut(500);
-                  setTimeout(() => {
-                    $(".container__result").show(500).fadeIn();
-                  }, 500);
                 })
                 .catch((error) => {
                   alert("Unexpected error\n" + JSON.stringify(error));
