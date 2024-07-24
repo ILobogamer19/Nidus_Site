@@ -8,6 +8,7 @@ export default function Modal_De_Produto({
   Definir_Endereco_Atual_Da_Pagina_Local,
   Definir_Valor_Total_Guardado_Dentro_Do_Carrinho,
   Definir_Estilo_De_Compra_Carrinho_Ou_Unica,
+  Definir_Descricao_De_Produtos_Sendo_Comprados,
 }) {
   const [
     Tamanho_De_Roupa_Escolhido_Vizualizar_Botao,
@@ -197,6 +198,15 @@ export default function Modal_De_Produto({
                 Definir_Endereco_Atual_Da_Pagina_Local(
                   "Escolher_Metodo_De_Pagamento"
                 );
+                Definir_Descricao_De_Produtos_Sendo_Comprados([
+                  {
+                    ...Produto_Com_Modal_Ativo,
+                    Tamanhos:
+                      Produto_Com_Modal_Ativo.Tamanhos[
+                        Tamanho_De_Roupa_Escolhido_Vizualizar_Botao
+                      ],
+                  },
+                ]);
               }}
             >
               Comprar

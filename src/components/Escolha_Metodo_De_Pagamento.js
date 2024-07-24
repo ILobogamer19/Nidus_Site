@@ -11,6 +11,7 @@ export default function Escolha_De_Metodo_De_Pagamento({
   Quantidade_De_Itens_Adicionados_No_Carrinho,
   Estilo_De_Compra_Carrinho_Ou_Unica,
   Forma_De_Pagamento_Escolhida_Atual,
+  Descricao_De_Produtos_Sendo_Comprados,
 }) {
   const [Metodo_De_Pagamento_Escolhido, setMetodo_De_Pagamento_Escolhido] =
     useState();
@@ -19,9 +20,7 @@ export default function Escolha_De_Metodo_De_Pagamento({
 
   useEffect(() => {
     setConfirmacao_De_Valores_Cobrados(false);
-    Calculo_De_Frete();
-
-    console.log("Executado");
+    // Calculo_De_Frete();
   }, []);
 
   const Calculo_De_Frete = () => {
@@ -29,17 +28,47 @@ export default function Escolha_De_Metodo_De_Pagamento({
 
     const options = {
       method: "POST",
-      url: "https://melhorenvio.com.br/api/v2/me/shipment/calculate",
+      url: "https://app.melhorenvio.com.br/api/v2/me/shipment/calculate",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        Authorization: "Bearer token",
-        "User-Agent": "Aplicação (email para contato técnico)",
+        Authorization:
+          "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjNhNjgxNmFjZWMyYzA2OTI1MWQ0MDkyZTMzZDI3NjAxNTNjOGQyYzE5OTRiMGQ1N2Y1ZWU4YTQ0NGE5MmQ4Mjg3YmM1NGFmYjA3MTM1MTAiLCJpYXQiOjE3MjE3NjYyODkuMTA4MjI3LCJuYmYiOjE3MjE3NjYyODkuMTA4MjI5LCJleHAiOjE3NTMzMDIyODkuMDg5MTAxLCJzdWIiOiI5YzhmZTY2Ni1iZjMwLTRjNjktOTNlMC0xNTA4YWEyMTZiZjMiLCJzY29wZXMiOlsic2hpcHBpbmctY2FsY3VsYXRlIl19.RW9plKDafmaN-_qd1dQ1-qWas8wT0FUe8cY3jNJkYj2euVFmHSRblkbyE4Fz4gocmxfNJQMvqx1nIaoiXf2tCGUWuNnRjIkBFFL0zQsKZOdQFNsyjK1PDqv9mK2f6W6im4mM3pT32tpf1uwbDRY7aHftpbX3TNDFAqJyN3dKhJnLYW-vA9WFJ_zJutNIvlQFLe1ghgR46BNtoP4bHYX08mtX5rKSaz9wnwIYFKq5r6cEy7aeldOoKtZpypvDcOqw0IAAhsDtN1T2Oh7jfFsyfz2c8JosxbDwsxBNHX42jzW0acmLwdixa6w879jhBU5MDsv8JBnhTmMx6Ok4ksDc0DlrcFHJfwNoOgvFUR8MQQBI6jHenX0RGBM9Awnk5n8_1QJmRDp7ROVDVNB9MO4IOgPJqEjV_dgU30H03FwIbnzJ4gbgWS6u7ZYknMFXI43AEphBMSGIRkdmg4Jvh7vLMepg-D5yJ-qCcBBHM3d_A1wJgah_Ax5oXS1IF0e52RXliiI3hpy5hwfSu8qaXfJcVcxDnC5fkyiSTvrecX1iydn0_-j7-gj12t88GDzh__jlaMM_isco2bj7M8g8EisOMZzqUWfOaAvXsT2GPf1Hmeyj4Ymm6K2iydLwcOESUdA3U96TLodpnjAIw89MgfRbLBQ5TGiPKk6JRnwMQTQ9lHo",
+        "User-Agent": "Nidus manuelgornelasn@gmail.com",
+        "Access-Control-Allow-Origin": true,
       },
       data: {
-        from: { postal_code: "01002001" },
-        to: { postal_code: "90570020" },
-        package: { height: 4, width: 12, length: 17, weight: 0.3 },
+        from: { postal_code: "96020360" },
+        to: { postal_code: "01018020" },
+        products: [
+          {
+            id: "x",
+            width: 11,
+            height: 17,
+            length: 11,
+            weight: 0.3,
+            insurance_value: 10.1,
+            quantity: 1,
+          },
+          {
+            id: "y",
+            width: 16,
+            height: 25,
+            length: 11,
+            weight: 0.3,
+            insurance_value: 55.05,
+            quantity: 2,
+          },
+          {
+            id: "z",
+            width: 22,
+            height: 30,
+            length: 11,
+            weight: 1,
+            insurance_value: 30,
+            quantity: 1,
+          },
+        ],
       },
     };
 
@@ -69,8 +98,6 @@ export default function Escolha_De_Metodo_De_Pagamento({
       setConfirmacao_De_Valores_Cobrados(false);
       Definir_Forma_De_Pagamento_Escolhida_Atual();
     }
-
-    console.log(Metodo_De_Pagamento_Escolhido);
   }, [Confirmacao_De_Valores_Cobrados, Metodo_De_Pagamento_Escolhido]);
 
   useEffect(() => {
@@ -81,7 +108,6 @@ export default function Escolha_De_Metodo_De_Pagamento({
     ) {
       Definir_Endereco_Atual_Da_Pagina_Local("Metodo_De_Pagamento_Escolhido");
     }
-    console.log("Verificacao executada");
   }, [Metodo_De_Pagamento_Escolhido, Confirmacao_De_Valores_Cobrados]);
 
   return (
@@ -135,6 +161,24 @@ export default function Escolha_De_Metodo_De_Pagamento({
       <div className="Preco_Total_De_Itens_Resumo">
         <div className="Itens_Conjunto_De_Informacoes">
           <div className="Valores_Que_Seram_Checados">
+            <div className="Itens_Com_Descricao_Dentro_Da_Confirmacao">
+              <p>Itens: </p>
+              {Descricao_De_Produtos_Sendo_Comprados &&
+                Descricao_De_Produtos_Sendo_Comprados.map((item, index) => {
+                  return (
+                    <div
+                      className="Itens_Individual_Descricoes"
+                      key={"Itens_Individual_Descricoes " + item + index}
+                    >
+                      <p>{`${
+                        item.Quantidade_Do_Produto
+                          ? item.Quantidade_Do_Produto
+                          : 1
+                      } ${item.Nome} ${item.Tamanhos}`}</p>
+                    </div>
+                  );
+                })}
+            </div>
             <p>
               Quantia de itens no carrinho:{" "}
               {Estilo_De_Compra_Carrinho_Ou_Unica == "Unica"

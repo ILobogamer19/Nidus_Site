@@ -10,6 +10,7 @@ export default function Sessao_Produtos({
   Definir_Endereco_Atual_Da_Pagina_Local,
   Definir_Valor_Total_Guardado_Dentro_Do_Carrinho,
   Definir_Estilo_De_Compra_Carrinho_Ou_Unica,
+  Definir_Descricao_De_Produtos_Sendo_Comprados,
 }) {
   const [Filtro_Ativo, setfiltro_Ativo] = useState("");
   const [Produto_Com_Modal_Ativo, setProduto_Com_Modal_Ativo] = useState("");
@@ -20,10 +21,10 @@ export default function Sessao_Produtos({
       data-aos="fade-up"
       data-aos-delay="10"
     >
-      <Filtros_De_Produtos
+      {/* <Filtros_De_Produtos
         Filtro_Ativo={Filtro_Ativo}
         Definir_Valor_Do_filtro={setfiltro_Ativo}
-      />
+      /> */}
       <Produtos_Principais
         Filtro_Ativo={Filtro_Ativo}
         Definir_Produto_Com_Modal_Ativo={setProduto_Com_Modal_Ativo}
@@ -45,6 +46,9 @@ export default function Sessao_Produtos({
         }
         Definir_Estilo_De_Compra_Carrinho_Ou_Unica={
           Definir_Estilo_De_Compra_Carrinho_Ou_Unica
+        }
+        Definir_Descricao_De_Produtos_Sendo_Comprados={
+          Definir_Descricao_De_Produtos_Sendo_Comprados
         }
       />
     </section>

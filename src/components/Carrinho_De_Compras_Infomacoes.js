@@ -7,12 +7,19 @@ export default function Carrinho_De_Compras_Informacoes({
   Definir_Endereco_Atual_Da_Pagina_Local,
   Definir_Valor_Total_Guardado_Dentro_Do_Carrinho,
   Definir_Estilo_De_Compra_Carrinho_Ou_Unica,
+  Definir_Descricao_De_Produtos_Sendo_Comprados,
 }) {
   var Valor_Total_Geral_Dos_Produtos = 0;
 
   useEffect(() => {
     console.log(Itens_Adicionados_No_Carrinho);
   }, [Itens_Adicionados_No_Carrinho]);
+
+  useEffect(() => {
+    Definir_Valor_Total_Guardado_Dentro_Do_Carrinho(
+      Valor_Total_Geral_Dos_Produtos
+    );
+  }, [Valor_Total_Geral_Dos_Produtos]);
 
   return (
     <>
@@ -132,6 +139,9 @@ export default function Carrinho_De_Compras_Informacoes({
             Definir_Endereco_Atual_Da_Pagina_Local(
               "Escolher_Metodo_De_Pagamento"
             );
+            Definir_Descricao_De_Produtos_Sendo_Comprados(
+              Itens_Adicionados_No_Carrinho
+            );
           }}
         >
           Comprar agora
@@ -143,9 +153,6 @@ export default function Carrinho_De_Compras_Informacoes({
             : Valor_Total_Geral_Dos_Produtos + ",00"}
         </p>
         {console.log("Valor total guardado: " + Valor_Total_Geral_Dos_Produtos)}
-        {Definir_Valor_Total_Guardado_Dentro_Do_Carrinho(
-          Valor_Total_Geral_Dos_Produtos
-        )}
       </div>
     </>
   );

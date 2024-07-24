@@ -377,7 +377,7 @@ export default function Metodo_De_Pagamento_Cartao_De_Credito({
         </div>
       </section>
 
-      <div id="loading-message">
+      <div id="loading-message" style={{ display: "none" }}>
         <p>Carregando</p>
       </div>
 

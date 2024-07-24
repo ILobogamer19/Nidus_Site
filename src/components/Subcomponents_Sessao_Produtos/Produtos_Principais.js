@@ -64,7 +64,8 @@ export default function Produtos_Principais({
           src={"./img/" + item.Tipo + "/" + item.Nome + "/2.png"}
         />
         <p className="Nome_Do_Produto_Padronizado">{item.Nome}</p>
-        <p className="Colecao_Do_Produto_Padronizado">{item.Colecao}</p>
+        {/* <p className="Colecao_Do_Produto_Padronizado">{item.Colecao}</p> */}
+        <p>Unidades: {item.Estoque}</p>
         <p className="Preco_Do_Produto_Padronizado">
           R${" "}
           {item.Preco.toString().includes(".")
